@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:id="@+id/pgs"
+        android:layout_width="200dp"
+        android:layout_height="500dp"
+
+
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sc"
+        app:layout_constraintVertical_bias="0.658">
+
+    </ProgressBar>
+
+    <HorizontalScrollView
+       android:id="@+id/sc"
+       android:layout_width="wrap_content"
+       android:layout_height="170dp"
+       tools:ignore="MissingConstraints">
+
+
+    <LinearLayout
+        android:id="@+id/cons"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        >
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="190dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="10dp"
+            >
+            <ImageView
+                android:id="@+id/general"
+                android:layout_width="190dp"
+                android:layout_height="120dp"
+                android:src="@drawable/gn"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GENERAL"
+                android:layout_gravity="center"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                android:textColor="@color/white">
+
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="190dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="20dp"
+           >
+            <ImageView
+                android:id="@+id/entertainment"
+                android:layout_width="190dp"
+                android:layout_height="120dp"
+                android:src="@drawable/entertenment"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ENTERTAINMENT"
+                android:layout_gravity="center"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:textColor="@color/white">
+
+            </TextView>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="190dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="10dp"
+            >
+            <ImageView
+                android:id="@+id/business"
+                android:layout_width="190dp"
+                android:layout_height="120dp"
+                android:src="@drawable/bs"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BUSINESS"
+                android:layout_gravity="center"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                android:textColor="@color/white">
+
+            </TextView>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="190dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="10dp"
+            >
+            <ImageView
+                android:id="@+id/health"
+                android:layout_width="190dp"
+                android:layout_height="120dp"
+                android:src="@drawable/he"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HEALTH"
+                android:layout_gravity="center"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                android:textColor="@color/white">
+
+            </TextView>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="190dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="10dp"
+            >
+            <ImageView
+                android:id="@+id/science"
+                android:layout_width="190dp"
+                android:layout_height="120dp"
+                android:src="@drawable/science"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SCIENCE"
+                android:layout_gravity="center"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                android:textColor="@color/white">
+
+            </TextView>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="190dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="10dp"
+            >
+            <ImageView
+                android:id="@+id/sports"
+                android:layout_width="190dp"
+                android:layout_height="120dp"
+                android:src="@drawable/sp1"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SPORTS"
+                android:layout_gravity="center"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                android:textColor="@color/white">
+
+            </TextView>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="190dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="10dp"
+            >
+            <ImageView
+                android:id="@+id/technology"
+                android:layout_width="190dp"
+                android:layout_height="120dp"
+                android:src="@drawable/technology"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TECHONOLOGY"
+                android:layout_gravity="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white">
+
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+   </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sc">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
